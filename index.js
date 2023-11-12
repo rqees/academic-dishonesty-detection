@@ -58,9 +58,7 @@ app.post('/upload', upload.single('image'), async (req, res) => {
     // Send the API response back to the client
     res.json(TRANSCRIBE_RESPONSE.data);
 
-
-
-    //AI Detection API 
+    //AI Generated Content Detection API 
 
     const DETECT_API_KEY = process.env.DETECT_API_KEY;
     const DETECT_PUBLIC_BEARER = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRkZ3NzdXRyaHpya2xsc3RnbGRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODY2ODc5MjMsImV4cCI6MjAwMjI2MzkyM30.bwSe1TrFMhcosgqFSlGIhMIv9fxohzLG0eyBEs7wUo8';
