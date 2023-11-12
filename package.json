@@ -1,0 +1,25 @@
+{
+  "name": "v1.4-n",
+  "version": "1.0.0",
+  "description": "Testing to see if server can make calls to a different endpoint to fetch some data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "handwriting",
+    "api",
+    "ocelus"
+  ],
+  "author": "Raees Kabir",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1"
+  }
+}

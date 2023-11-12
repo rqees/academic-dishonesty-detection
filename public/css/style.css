@@ -1,0 +1,102 @@
+body {
+    background-image: url(''); /* Default background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif; /* Apply the modern font */
+
+}
+
+#upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer; /* Make the cursor change to a pointer on hover */
+}
+
+#upload-btn-wrapper .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer; /* Make the cursor change to a pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+#upload-btn-wrapper .btn:hover {
+    background-color: #f1f1f1;
+    color: #000; /* Darken the text color on hover */
+}
+
+#upload-btn-wrapper .btn:active {
+    background-color: #ccc; /* Change the background color when clicked */
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif; /* Apply the modern font */
+
+}
+.loading-container {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 100px auto;
+}
+
+.loading-text {
+    display: inline-block;
+    position: relative;
+    animation: loading 3s infinite;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes loading {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
