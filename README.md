@@ -1,1 +1,1 @@
-This program detects the % of AI generated content in handwritten text. This app may act as a safeguard to prevent AI plagiarism in academic settings. Unfortunately, the API used to  convert the handwritten text into digital text (OCR) is not free.
+This program detects the % of AI generated content in handwritten text. This app may act as a safeguard to prevent AI plagiarism in academic settings. Unfortunately, the OCR API used to convert the handwritten text into digital text is paid.
